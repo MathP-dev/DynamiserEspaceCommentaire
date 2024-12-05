@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleSubmit(e) {
       e.preventDefault();
       
+      // découverte de .trim() pour supprimer les espaces blancs au début et à la fin sans modifier la chaine de caractère à l'intérieur
       const firstName = document.getElementById('first-name').value.trim();
       const lastName = document.getElementById('last-name').value.trim();
       const message = document.getElementById('message').value.trim();
